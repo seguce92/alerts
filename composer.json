@@ -1,0 +1,22 @@
+{
+    "name": "seguce92/alerts",
+    "description": "Alert pNotify plugin, flash alerts integrted in Laravel.",
+    "keywords": ["laravel", "bootstrap", "flash message", "pnotify"],
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Sergio G. Cruz espinoza",
+            "email": "seguce92@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+        "prologue/alerts": "0.4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Seguce92\\Alerts\\": "src/"
+        }
+    }
+}

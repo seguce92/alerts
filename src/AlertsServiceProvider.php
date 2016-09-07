@@ -11,7 +11,7 @@ class AlertsServiceProvider extends ServiceProvider
 
         $this->publishes([__DIR__. '/public' => public_path('vendor/seguce92/alerts')], 'public');
 
-        $this->loadViewsFrom(__DIR__. '/resources/views/'), 'alerts');
+        $this->loadViewsFrom(__DIR__. '/resources/views', 'alerts');
     }
 
     public function register()

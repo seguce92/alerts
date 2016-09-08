@@ -7,12 +7,27 @@ Alerts requires PHP >= 5.3, laravel 5.*
 
 ## Installation
 
-```sh
-composer require seguce92/alerts
+You can install the package for your Laravel 5 project through Composer.
+
+```bash
+$ composer require seguce92/alerts
 ```
-Add ServiceProvider to config/app.php
-```sh
-Seguce92\Alerts\AlertsServiceProvider::class,
+
+Register the service provider in `app/config/app.php`.
+
+```php
+'Seguce92\Alerts\AlertsServiceProvider',
+```
+
+Add the alias to the list of aliases in `app/config/app.php`.
+
+```php
+'Alerts' => 'Seguce92\Alerts\Facades\Alert',
+```
+
+Then run a few commands in the terminal:
+``` bash
+$ php artisan vendor:publish
 ```
 ## Configuration
 
@@ -75,5 +90,5 @@ add function before of section script
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-Alerts::all();
+{!! Alerts::all() !!}
 ```

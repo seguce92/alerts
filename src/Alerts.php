@@ -5,7 +5,8 @@ class Alerts{
 
 	public static function all()
 	{
-		return view('alerts::alert');
+		return "hello";
+		//return view('alerts::alert');
 	}
 
 }

@@ -2,7 +2,7 @@
 
 Alerts is a package for show alerts with pNotify jQuery plugin Bootstrap.
 
-Alerts requires PHP >= 5.3, laravel 5.*
+Alerts requires PHP >= 5.3, laravel 5.3.*|5.4.*|5.5.*
 
 
 ## Installation
@@ -68,7 +68,7 @@ notification type [desktop, normal]
 
 ## Basic Usage
 
-Controllers.php
+Controllers.php or `routes/web.php`
 
 ```php
 Alert::info('description')->flash();

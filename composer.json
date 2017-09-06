@@ -6,8 +6,9 @@
     "type": "project",
     "authors": [
         {
-            "name": "Sergio G. Cruz espinoza",
-            "email": "seguce92@gmail.com"
+            "name": "Sergio Gualberto Cruz espinoza",
+            "email": "seguce92@gmail.com",
+            "homepage": "https://mascodigo.net/"
         }
     ],
     "require": {
@@ -18,5 +19,15 @@
         "psr-4": {
             "Seguce92\\Alerts\\": "src/"
         }
-    }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Seguce92\\Alerts\\AlertsServiceProvider"
+            ],
+            "aliases": [
+                "Seguce92\\Alerts\\Facades\\Alert"
+            ]
+        }
+    },
 }
